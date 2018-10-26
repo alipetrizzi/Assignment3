@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ali Petrizzi</title>
+    <!--These link elements must be in theis order!-->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-1">
+        <a class="navbar-brand" href="index.html">Ali Petrizzi</a>
+        <button class="navbar-toggler" type="button" data-toggle="brand" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADING -->
+    <section id="portfolio-heading" class="p-5">
+        <div class="dark-overlay">
+            <div class="row">
+            <div class="col">
+                <div class="container pt-5">
+                <h1>Portfolio</h1>
+                <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BREADCRUMBS -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+        </ol>
+    </nav>
+
+    <!-- 2 BUTTONS -->
+    <section class="portfolio-buttons">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-4 text-center p-5">
+                        <button type="button" class="btn btn-secondary p-5">
+                            <a href="portfolio-gd.html" class="portfolio-button-text">Graphic Design</a>
+                        </button>
+                </div>
+                <div class="col-4 text-center p-5">
+                        <button type="button" class="btn btn-secondary p-5">
+                            <a href="portfolio-wd.html" class="portfolio-button-text">Web Design</a>
+                        </button>
+                </div>
+                <div class="col-4 text-center p-5">
+                        <button type="button" class="btn btn-secondary p-5" data-container="body" data-toggle="popover" data-placement="right" data-content="This section is coming soon.">
+                            Other
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4">
+        <div class="container">
+            <div class="row">
+            <div class="col">
+                <p>Copyright &copy;
+                <span id="year"></span> Ali Petrizzi</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!--These script elements must be in theis order!-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        //Custom scripts (internal or external scripts)
+
+        //Get the current year for copyright using jQuery bc javascript is forever long
+        $('#year').text(new Date().getFullYear());
+
+        $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+
+    </script>
+
+</body>
+
+</html>
